@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="10dp"
+android:background="@drawable/listboard"
+    >
+
+<ImageView
+    android:id="@+id/payImg"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/circle_shape"
+    android:backgroundTint="#44b0f8"
+    android:padding="11dp"
+    android:src="@drawable/pimg" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#0368ab"
+    android:textStyle="bold"
+    android:textSize="13dp"
+    android:id="@+id/playername"
+    android:drawableLeft="@drawable/ic_baseline_person_24"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="65dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playernumber"
+    android:layout_below="@+id/playername"
+    android:layout_marginStart="65dp"
+    android:layout_marginTop="5dp"
+    android:textSize="13dp"
+    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+    android:textColor="#0368ab"
+    android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/editplay"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/edit"></ImageView>
+
+        <ImageView
+            android:id="@+id/delplay"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ic_delete"></ImageView>
+    </LinearLayout>
+</RelativeLayout>

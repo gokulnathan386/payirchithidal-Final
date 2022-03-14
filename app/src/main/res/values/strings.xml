@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Payirchi Thidal</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_Branch">Branch</string>
+    <string name="menu_kit">Kit</string>
+    <string name="menu_batch">Batch</string>
+    <string name="menu_Players">Players</string>
+    <string name="menu_Fees">Fees</string>
+    <string name="menu_Notification">Notification</string>
+    <string name="menu_Attendance">Attendance</string>
+    <string name="menu_Sports">Sports</string>
+    <string name="menu_Payout">Payout</string>
+    <string name="menu_Users">Users</string>
+    <string name="menu_Role">Role</string>
+</resources>

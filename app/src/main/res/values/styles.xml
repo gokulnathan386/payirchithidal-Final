@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightBlue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tab_bg</item>
+    </style>
+    <style name="pin_edittext_style">
+        <item name="android:gravity">center</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:minEms">2</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#0071BC</item>
+        <item name="android:windowBackground">#0071BC</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">#B3185782</item>
+        <item name="android:textColorSecondary">#fff</item>
+        <item name="colorOnPrimary">#fff</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#0071BC</item>
+    </style>
+
+
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#0071BC</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#0071BC</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:textSize">@null</item>
+    </style>
+
+    <style name="MyAlertDialogStyleMultiSelect" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">#0071BC</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#0071BC</item>
+        <item name="android:textSize">@null</item>
+        <item name="textColorAlertDialogListItem">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="ThemeOverlay.SearchView" parent="">
+        <item name="android:editTextColor">#191919</item>
+        <item name="android:textColorHint">#191919</item>
+    </style>
+
+</resources>

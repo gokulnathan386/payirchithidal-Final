@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen"
+    tools:context=".UserslistActivity">
+
+    <include layout="@layout/app_bar_userslist" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="70dp">
+
+        <SearchView
+            android:id="@+id/search_edt"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:queryHint="Search"
+            android:ems="10"
+            android:theme="@style/ThemeOverlay.SearchView"
+            android:background="@drawable/search_border_line"
+            android:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/background_listview"
+        android:paddingRight="10dp"
+        tools:ignore="Orientation">
+        <TextView
+            android:id="@+id/RecordNotFound"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Records Found"
+            />
+        <ListView
+            android:id="@+id/userlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+</RelativeLayout>

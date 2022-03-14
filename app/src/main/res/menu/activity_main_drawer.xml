@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_ClubBankAccount"
+            android:icon="@drawable/rs"
+            android:title="Account Details" />
+        <item
+            android:id="@+id/nav_feesbtn"
+            android:icon="@drawable/rs"
+            android:title="@string/menu_Fees" />
+        <item
+            android:id="@+id/nav_PendingFessList"
+            android:icon="@drawable/rs"
+            android:title="Pending Fees" />
+        <item
+            android:id="@+id/nav_Attendance"
+            android:icon="@drawable/attendanceicon"
+            android:title="@string/menu_Attendance" />
+        <item
+            android:id="@+id/nac_player"
+            android:icon="@drawable/ic_baseline_people_alt_24"
+            android:title="@string/menu_Players" />
+
+        <item
+            android:id="@+id/nav_Notification"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:title="@string/menu_Notification"/>
+        <item
+            android:id="@+id/nav_batch"
+            android:icon="@drawable/batchicon"
+            android:title="@string/menu_batch" />
+
+        <item
+            android:id="@+id/nav_Kit"
+            android:icon="@drawable/kiticon"
+            android:title="@string/menu_kit" />
+
+        <item
+            android:id="@+id/nav_branch"
+            android:icon="@drawable/branch1"
+            android:title="@string/menu_Branch" />
+        <item
+            android:id="@+id/nav_Sports"
+            android:icon="@drawable/sports"
+            android:title="@string/menu_Sports" />
+        <item
+            android:id="@+id/nav_Payout"
+            android:icon="@drawable/rs"
+            android:title="@string/menu_Payout" />
+        <item
+            android:id="@+id/nav_Users"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_Users" />
+        <item
+            android:id="@+id/nav_Role"
+            android:icon="@drawable/batchicon"
+            android:title="@string/menu_Role" />
+        <item
+            android:id="@+id/nav_ChangePassword"
+            android:icon="@drawable/ic_baseline_lock_24"
+            android:title="Change Password" />
+        <item
+           android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="Logout" />
+    </group>
+</menu>

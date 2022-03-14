@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="5dp"
+android:background="@drawable/homescreen"
+tools:context=".EditBatchActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_listview"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:inputType="text"
+            android:textColor="#191919"
+            android:background="@drawable/addplayer_border" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Practice Time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="46dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Start Time" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="8dp"
+                android:text="End Time" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_height="match_parent">
+            <Spinner
+                android:id="@+id/starthrs"
+                android:layout_width="50dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/addplayer_border"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/startmin"
+                android:layout_width="50dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/addplayer_border"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/endhrs"
+                android:layout_marginLeft="25dp"
+                android:layout_width="50dp"
+                android:background="@drawable/addplayer_border"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/endmint"
+                android:layout_width="50dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/addplayer_border"
+                android:layout_height="40dp" />
+            <Spinner
+                android:id="@+id/ampm"
+                android:layout_width="50dp"
+                android:background="@drawable/addplayer_border"
+                android:layout_marginLeft="2dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Batch Type" />
+
+        <Spinner
+            android:id="@+id/batchtype"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/addplayer_border" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Amount" />
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/addplayer_border"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:textColor="#191919" />
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Amount Type" />
+        <Spinner
+            android:id="@+id/amtype"
+            android:layout_width="fill_parent"
+            android:background="@drawable/addplayer_border"
+            android:layout_height="40dp" />
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Branch" />
+        <Spinner
+            android:id="@+id/branch"
+            android:layout_width="fill_parent"
+            android:background="@drawable/addplayer_border"
+            android:layout_height="40dp" />
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Sports" />
+
+        <Spinner
+            android:id="@+id/sports"
+            android:layout_width="fill_parent"
+            android:background="@drawable/addplayer_border"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/cancelbtnbatch"
+                android:text="Cancel"
+                android:background="@drawable/addboarder"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginLeft="80dp"
+                android:layout_width="100dp"
+                android:layout_height="45dp">
+            </Button>
+            <Button
+                android:id="@+id/savebtn"
+                android:text="save"
+                android:textColor="@color/white"
+                android:backgroundTint="#0071bd"
+                android:textStyle="bold"
+                android:background="@drawable/addboarder"
+                android:layout_toRightOf="@id/cancelbtn"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="45dp">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

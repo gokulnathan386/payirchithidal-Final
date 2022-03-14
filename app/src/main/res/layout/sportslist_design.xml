@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:padding="10dp"
+    android:background="@drawable/listboard"
+    >
+    <ImageView
+        android:id="@+id/prImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#44b0f8"
+        android:padding="11dp"
+        android:src="@drawable/pimg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sportsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#191919"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:gravity="end">
+        <ImageView
+            android:id="@+id/sportsbtn"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/edit"></ImageView>
+        <ImageView
+            android:id="@+id/sportsdel"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_delete"></ImageView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="5dp"
+android:background="@drawable/homescreen" tools:context=".FeesCollectForm">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_listview"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Players Name"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/playername"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/addplayer_border"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Select Date"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/feesdate"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/addplayer_border"
+            android:paddingLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/cancelbtnfees"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/addboarder"
+                android:backgroundTint="@color/white"
+                android:text="Cancel"
+                android:textColor="@color/black"></Button>
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/cancelbtn"
+                android:background="@drawable/addboarder"
+                android:backgroundTint="#0071bd"
+                android:onClick="feesInput"
+                android:text="save"
+                android:textColor="@color/white"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

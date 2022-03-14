@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-atuo"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/Toolbarfees"
+    android:background="#0572ba"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+   >
+    <ImageView
+        android:id="@+id/backbtnfees"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Fees List"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/addbtnfees"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@drawable/addboarder"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:text="Add Fees"
+        android:textColor="#0568ab"
+        android:textStyle="bold" />
+
+
+</androidx.appcompat.widget.Toolbar>
+
+

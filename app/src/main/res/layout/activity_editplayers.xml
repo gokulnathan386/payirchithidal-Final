@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/homescreen"
+    tools:context=".EditplayersActivity">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_listview"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="First Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Last Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:inputType="text"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Branch"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/Branchspinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Batch"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/batch"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Mobile"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:inputType="number"
+                android:textStyle="bold"
+              />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Email"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:inputType="text"
+                android:textStyle="bold"
+            />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="kit"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/kitplayer"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="Select Kit"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:textStyle="bold"
+                android:background="@drawable/addplayer_border" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Address"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+                android:inputType="text"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="country"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/countryply"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="State"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/stateply"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="city"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/cityply"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Status"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/addplayer_border" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Joining Date"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/playdate"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#191919"
+              />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/playimg"
+                    android:padding="5dp"
+                    android:background="@drawable/addboarder"
+                    android:src="@drawable/pimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/addplayer_border"
+                    android:src="@drawable/qrcode"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="5dp"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="90dp"
+                    android:text="Qr Code"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/addboarder"
+                    android:backgroundTint="@color/white"
+                    android:text="Cancel"
+                    android:textColor="@color/black"></Button>
+
+                <Button
+                    android:id="@+id/savebtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/cancelbtn"
+                    android:background="@drawable/addboarder"
+                    android:backgroundTint="#0071bd"
+                    android:text="save"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView >

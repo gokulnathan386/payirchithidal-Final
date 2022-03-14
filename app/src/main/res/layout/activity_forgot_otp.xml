@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+android:gravity="center"
+android:background="@drawable/homescreen"
+tools:context=".ForgotOtpActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CC185782"
+    android:orientation="vertical"
+    android:layout_marginBottom="110dp"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+
+        android:text="Verification Code"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Please type the verification code  sent to gmail "
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/Otprtimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center">
+    </TextView>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:layout_marginTop="20dp"
+       android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/otpone"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/addplayer_border"
+        android:lines="1"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#191919"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textStyle="bold"/>
+       <EditText
+           android:id="@+id/otptwo"
+           android:layout_width="60dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="2dp"
+           android:background="@drawable/addplayer_border"
+           android:lines="1"
+           android:maxLength="1"
+           android:maxLines="1"
+           android:padding="10dp"
+           android:gravity="center"
+           android:textColor="#191919"
+           android:textSize="15dp"
+           android:inputType="number"
+           android:singleLine="true"
+           android:textStyle="bold"/>
+       <EditText
+           android:id="@+id/otpthree"
+           android:layout_width="60dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="2dp"
+           android:background="@drawable/addplayer_border"
+           android:maxLength="1"
+           android:maxLines="1"
+           android:padding="10dp"
+           android:textColor="#191919"
+           android:textSize="15dp"
+           android:gravity="center"
+           android:inputType="number"
+           android:singleLine="true"
+           android:textStyle="bold"
+
+         />
+       <EditText
+           android:id="@+id/otpfour"
+           android:layout_width="60dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="2dp"
+           android:background="@drawable/addplayer_border"
+           android:lines="1"
+           android:maxLength="1"
+           android:maxLines="1"
+           android:padding="10dp"
+           android:textColor="#191919"
+           android:textSize="15dp"
+           android:gravity="center"
+           android:inputType="number"
+           android:singleLine="true"
+           android:textStyle="bold" />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/cancelbtnfotgot"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="76dp"
+            android:background="@drawable/addboarder"
+            android:backgroundTint="@color/white"
+            android:text="Cancel"
+            android:textColor="@color/black"></Button>
+
+        <Button
+            android:id="@+id/Verifybtn"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/cancelbtn"
+            android:background="@drawable/addboarder"
+            android:backgroundTint="#0071bd"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/resend"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/addboarder"
+            android:backgroundTint="#0071bd"
+            android:text="Resend otp"
+            android:textColor="@color/white"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen"
+    tools:context=".AddKitActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_listview"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="25dp"
+                android:text="Kit Name" />
+            <EditText
+                android:id="@+id/kitname"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="#191919"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/addplayer_border"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="25dp"
+                android:text="Branch" />
+
+
+
+            <Spinner
+                android:id="@+id/selectbranch"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/addplayer_border"
+                android:textColor="#3b88bc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/white"
+                android:text="Image" />
+
+            <ImageView
+                android:id="@+id/kitimg"
+                android:padding="5dp"
+                android:background="@drawable/addboarder"
+                android:src="@drawable/pimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/cancelbtnkit"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/addboarder"
+                    android:backgroundTint="@color/white"
+                    android:text="Cancel"
+                    android:textColor="@color/black"></Button>
+
+                <Button
+                    android:id="@+id/kitsavebtn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="confirmInput"
+                    android:layout_toRightOf="@id/cancelbtn"
+                    android:background="@drawable/addboarder"
+                    android:backgroundTint="#0071bd"
+                    android:text="save"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
